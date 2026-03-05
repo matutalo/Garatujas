@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>mibombo</title>
+</head>
+
+<body>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: grid;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            grid-template-columns: 100px var(--grid-info-size) 1fr;
+            grid-template-rows: 1fr 120px;
+            grid-template-areas: 
+            "social info content"
+            "footer footer footer"
+            ;
+            border: 10px solid red;
+            min-height: 100svh;
+        }
+        :root {
+          --grid-info-size: 250px;  
+        }
+        aside {
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            grid-area: info;
+            .thumb{
+                width: calc(var(--grid-info-size) - 20px);
+                height: calc(var(--grid-info-size) - 20px);
+                background-color: lightgray;
+                border-radius: 50%;
+                flex: none;
+                z-index: 2;
+            }
+            section {
+                background-color: aliceblue;
+                width: 100%;
+                height: 100%;
+                margin-top: -1rem;
+                z-index: 1;
+                clip-path: polygone(0 0, 100%)
+            }
+        }
+        main {
+            grid-area: content;
+        }
+        .social {
+            grid-area: social;
+        }
+        footer {
+            grid-area: footer;
+        }
+        body > * {
+            border: 2px solid blue;
+        }
+    </style>
+    <aside>
+        <div class="thumb"></div>
+        <section></section>
+    </aside>
+    <main>
+        <article>
+            <h1>Gatos gordos oficial</h1>
+            <p>
+                Esses gatos sao muito gordinhos
+            </p>
+            </h1>
+        </article>
+        <div class="gallery">
+            <img class="gato1" src="https://png.pngtree.com/thumb_back/fh260/background/20230610/pngtree-fat-orange-cat-sits-on-top-of-a-rock-image_2911772.jpg" alt="gato gordo1">
+            <img class="gato2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm79WDrMrbFsAts1aBAeYZf1g9VLoCqNqqQQ&s" alt="gato gordo2">
+            <img class="gato3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSt-C_sJh3RWq9qKbK1V0zhNdCN3W7JRAC7g&s" alt="gato gordo3">
+            <img class="gato4" src="https://petdelicia.com.br/wp-content/uploads/2021/11/Meu-gato-e-fofinho-ou-esta-obeso-Entenda-os-riscos0305623600202101282335-sm.jpg" alt="gato gordo3">
+        </div>
+    </main>
+    <div class="social">
+
+
+    </div>
+    <footer>
+        <p>&copy; Todos os gatos gordos reservados.</p>
+
+    </footer>
+
+</body>
+
+</html>
