@@ -1,9 +1,9 @@
 # Garatujas de Davi Guntert Stringari IA25
 ==========================================
 ## [HTML] É a construção, a estrutura de um código que serve de base para adaptações como [CSS] e [JS].
------
+>>>>>>>>>>>>>>>>>>
 Sintaxe básica do HTML:
------
+>>>>>>>>>>>>>>>>>>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,14 +17,14 @@ Sintaxe básica do HTML:
     
 </body>
 </html>
------
+>>>>>>>>>>>>>>>>>>
 
 ## [CSS] É a estilização, o que deixa o site bonito.
------
+>>>>>>>>>>>>>>>>>>
 Sintaxe básica do CSS:
------
+>>>>>>>>>>>>>>>>>>
 .exclass{
 propriedade: valor;
 }
------
+>>>>>>>>>>>>>>>>>>
 ## [JS] É a programação, as "ações" do site.
